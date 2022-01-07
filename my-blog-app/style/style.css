@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-link {
+    text-decoration: none;
+}
+
+.main{
+    background-color:rgb(233, 233, 233);
+    
+    margin-top: 32px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    max-width: 750px;
+    min-width: 600;
+    width: 100%;
+    padding-right: 16px;
+    padding-left:16px;
+
+}
+
+footer {
+    min-height: 100px;
+    background-color: #dbe5ee70;
+    color: #262627;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+header{
+    min-height: 350px;
+    background-color:rgb(100, 23, 126);
+    color: rgb(252, 250, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    align-items:flex-start;
+    background-image: url(/assets/andrew-neel-cckf4TsHAuw-unsplash.jpg);
+    background-size:cover;
+    background-position: right;
+    position: relative;
+    
+}
+
+header > * {
+    z-index: 2;
+}
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+    
+
+}
+
+.profile-image{
+    width: 100px;
+    height: 100px;
+    background-color:white;
+    border-radius: 100px;
+    background-image: url(/assets/RX1A6730\ \(2\).jpg);
+    background-size: cover;
+
+}
+
+.profile-name{
+    font-size: 3em;
+    font-weight: bold;
+
+}
+
+.post{
+    display:flex;
+    border:1px solid rgb(17, 16, 16);
+    border-radius: 30px;
+    min-height:200px;
+    overflow: hidden;
+    transition:all 0.25s ease;
+    margin-top:20px;
+
+
+}
+
+.post-image{
+    flex-basis:40%;
+    background-image: url(/assets/deepavali.jpg);
+    background-size: cover;
+}
+.post-content{
+    flex-basis:60%;
+    background-color:white;
+    font-size: 18px;
+    padding:24px;
+}
+
+
+.post-date{
+    font-size:12px;
+    color:rgb(28, 31, 33);
+    font-weight:600;
+
+}
+.post-title{
+    margin-top: 6px;
+    font-size :1.5em;
+    color:#333;
+    font-weight:700;
+
+}
+
+.post-text{
+    margin-top:4px;
+    font-size: 1em;
+    line-height:1.4;
+    max-height:65px;
+
+
+
+}
+
+
+.post:hover{
+    transform: translate3d(0, -5px, 0);
+    box-shadow:0 2rem 5rem 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.nav-button.new-post-button{
+
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    font-size:24px;
+    width:50px;
+    height:50px;
+    background-color:blue;
+    color:wheat;
+    border-radius: 100px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.nav-button.new-post-button{
+    background-color:rgb(83, 15, 151);
+}
+
+.navigation a{   
+      
+       position: relative;
+       top: 8px;
+       right:30px;
+
+       border-radius: 5px;
+       border : 1px solid blue; 
+       color :#333;    
+       text-decoration : none;
+       padding: 5px 8px;
+       background-color:antiquewhite;
+
+}
+
